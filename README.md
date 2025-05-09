@@ -100,7 +100,7 @@ EOF
 - Initialize the Kubernetes cluster on the Master node.
 - NOTE: Update --pod-network-cidr=192.168.0.0/16 to match with your environment
  ```sh
-sudo kubeadm init --pod-network-cidr=192.168.0.0/16
+ sudo kubeadm init --control-plane-endpoint --pod-network-cidr=192.168.0.0/16
 ```
  ```sh
 mkdir ~/.kube
